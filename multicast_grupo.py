@@ -15,9 +15,7 @@ PUERTO_COORDINADOR = 5008
 HOST = "0.0.0.0"
 
 
-# ============================================================
 # FUNCIÓN PARA CREAR Y ENVIAR MENSAJES MULTICAST
-# ============================================================
 
 def enviar_multicast(mensaje):
     """
@@ -44,9 +42,7 @@ def enviar_multicast(mensaje):
         )
 
 
-# ============================================================
 # EJERCICIO B: NODOS QUE PERTENECEN AL GRUPO MULTICAST
-# ============================================================
 
 def iniciar_nodo(nombre_nodo):
     """
@@ -132,9 +128,7 @@ def iniciar_nodo(nombre_nodo):
         socket_recepcion.close()
 
 
-# ============================================================
 # EJERCICIOS A Y C: COORDINADOR CENTRAL
-# ============================================================
 
 def iniciar_coordinador():
     """
@@ -200,9 +194,7 @@ def iniciar_coordinador():
             print("\n[COORDINADOR] Servidor detenido.")
 
 
-# ============================================================
 # EJERCICIO C: EQUIPO EXTERNO AL GRUPO
-# ============================================================
 
 def iniciar_externo(ip_coordinador):
     """
@@ -245,9 +237,7 @@ def iniciar_externo(ip_coordinador):
             print("\n[EQUIPO EXTERNO] Programa detenido.")
 
 
-# ============================================================
 # PROGRAMA PRINCIPAL
-# ============================================================
 
 def mostrar_ayuda():
     print("""

@@ -22,25 +22,9 @@ ROLES
    Es la cuarta computadora. Escribe un mensaje y se lo envia al
    coordinador usando la IP de esa computadora.
 
-ANALOGIA SENCILLA
-
-Imagina un edificio con tres personas suscriptas a un altavoz compartido.
-Ese altavoz representa el grupo multicast: cuando se anuncia algo, los
-tres nodos pueden escucharlo al mismo tiempo.
-
-El coordinador es la recepcion del edificio. La cuarta computadora no
-puede hablar directamente por el altavoz: le entrega su mensaje a
-recepcion, y recepcion lo anuncia al grupo y le asigna un numero.
-
-En el codigo, cada mensaje se prepara como un objeto JSON y se envia en
-un unico datagrama UDP. Esto mantiene los limites entre mensajes: cada
-datagrama recibido se procesa como un mensaje separado. Sin embargo,
-UDP no confirma que el mensaje haya llegado ni lo vuelve a enviar si se
-pierde en la red.
 
 COMO EJECUTARLO
 
-Se necesita Python instalado en las cuatro computadoras y el archivo
 multicast_grupo.py disponible en cada una.
 
 1. En una computadora del grupo, iniciar el coordinador:
